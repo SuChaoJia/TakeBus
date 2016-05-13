@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <android.support.v4.widget.DrawerLayout
+        android:id="@+id/drawer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <include
+                android:id="@+id/title_layout"
+                layout="@layout/title_main" />
+
+            <com.baidu.mapapi.map.MapView
+                android:id="@+id/bmapView"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_below="@id/title_layout"
+                android:clickable="true" />
+
+            <include
+                android:id="@+id/btStation"
+                layout="@layout/bt_station" />
+
+            <Button
+                android:id="@+id/ivMyLocation"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_above="@+id/btStation"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/btn_mylocation_selector"
+                android:gravity="center"
+                android:padding="0dp"
+                android:textColor="#1A93F8" />
+
+            <Button
+                android:id="@+id/btn_up"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_above="@+id/btStation"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@id/ivMyLocation"
+                android:background="@drawable/slide_up_6_4_px"
+                android:onClick="hideStation" />
+
+            <include layout="@layout/layout_aboard" />
+
+            <include layout="@layout/layout_more_route" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/title_layout"
+                android:gravity="right"
+                android:orientation="horizontal" >
+
+                <Button
+                    android:id="@+id/btn_route"
+                    android:layout_width="45dip"
+                    android:layout_height="45dip"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/selectroutetest" />
+            </LinearLayout>
+           
+        </RelativeLayout>
+
+        <include layout="@layout/drawerlayout" />
+    </android.support.v4.widget.DrawerLayout>
+
+</LinearLayout>

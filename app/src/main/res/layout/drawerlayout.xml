@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:scrollbars="none"
+        android:id="@+id/drawerScrollView"
+    android:layout_gravity="start" >
+
+    <LinearLayout
+        android:layout_width="280dip"
+        android:layout_height="match_parent"
+        android:background="#130c0e"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/rlHead"
+            android:layout_width="280dip"
+            android:layout_height="100dip"
+            android:layout_gravity="start"
+            android:gravity="center_vertical" >
+
+            <com.rdc.freetogo.view.CircleImageView
+                android:id="@+id/circleImageView"
+                android:layout_width="70dip"
+                android:layout_height="70dip"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="30dip"
+                android:src="@drawable/default_avatar"
+                app:border_color="@color/white"
+                app:border_width="1dip" />
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dip"
+                android:layout_toRightOf="@id/circleImageView"
+                android:gravity="center"
+                android:paddingLeft="12dip"
+                android:text="未登录"
+                android:textColor="#ffffff"
+                android:textSize="16sp" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/guidance"
+            android:layout_width="wrap_content"
+            android:layout_height="45dip"
+            android:layout_marginLeft="30dip"
+            android:gravity="center"
+            android:text="导航"
+            android:textColor="#808080"
+            android:textSize="20sp" />
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dip"
+            android:orientation="vertical" >
+
+            <RadioButton
+                android:id="@+id/selfdate"
+                style="@style/list_style"
+                android:checked="true"
+                android:drawableLeft="@drawable/selfdata32px"
+                android:text="个人资料" />
+
+            <RadioButton
+                android:id="@+id/fingerprint"
+                style="@style/list_style"
+                android:drawableLeft="@drawable/fingerprint32px"
+                android:text="卡类认证" />
+
+            <RadioButton
+                android:id="@+id/ring"
+                style="@style/list_style"
+                android:drawableLeft="@drawable/icon_ring"
+                android:text="通知" />
+
+            <RadioButton
+                android:id="@+id/config"
+                style="@style/list_style"
+                android:drawableLeft="@drawable/icon_config"
+                android:text="设置" />
+
+            <RadioButton
+                android:id="@+id/about"
+                style="@style/list_style"
+                android:drawableLeft="@drawable/icon_about"
+                android:text="关于" />
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/pay"
+            android:layout_width="wrap_content"
+            android:layout_height="45dip"
+            android:layout_marginLeft="30dip"
+            android:layout_marginTop="30dip"
+            android:gravity="center"
+            android:text="支付"
+            android:textColor="#808080"
+            android:textSize="20sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginTop="10dip"
+            android:orientation="vertical" >
+
+            <RadioGroup
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <RadioButton
+                    android:id="@+id/history"
+                    style="@style/list_style"
+                    android:checked="false"
+                    android:drawableLeft="@drawable/icon_history"
+                    android:text="历史账单" />
+
+                <RadioButton
+                    android:id="@+id/wallet"
+                    style="@style/list_style"
+                    android:drawableLeft="@drawable/icon_wallet"
+                    android:text="支付绑定" />
+            </RadioGroup>
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

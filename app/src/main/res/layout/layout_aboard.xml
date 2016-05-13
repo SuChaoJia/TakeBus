@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_route"
+    android:layout_width="wrap_content"
+    android:layout_height="45dp"
+    android:layout_above="@+id/btStation"
+    android:layout_alignParentBottom="true"
+    android:layout_alignParentRight="true"
+    android:layout_marginBottom="10dp"
+    android:layout_marginRight="10dp"
+    android:background="@drawable/item_click_background" >
+
+    <TextView
+        android:id="@+id/selectRoute"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_centerVertical="true"
+        android:background="@drawable/item_click_background"
+        android:clickable="true"
+        android:gravity="center_vertical"
+        android:onClick="selectRoute"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:text="大学城环线1路"
+        android:textColor="@color/bt_black"
+        android:textSize="16dp" />
+
+    <View
+        android:id="@+id/line"
+        android:layout_width="0.8dp"
+        android:layout_height="fill_parent"
+        android:layout_toRightOf="@id/selectRoute"
+        android:background="@color/gray" />
+
+    <TextView
+        android:id="@+id/route_tag"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@id/line"
+        android:background="@drawable/item_click_background"
+        android:clickable="true"
+        android:gravity="center_vertical"
+        android:onClick="routeTag"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:text="上车"
+        android:textColor="@color/bt_green"
+        android:textSize="16dp" />
+
+</RelativeLayout>

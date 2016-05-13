@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="45dp"
+    android:background="#faf9f7"
+    android:elevation="3dp" >
+
+    <ImageView
+        android:id="@+id/ivBack"
+        android:layout_width="45.5dp"
+        android:layout_height="13dp"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dp"
+        android:src="@drawable/btn_back" />
+
+    <ImageView
+        android:layout_width="64dp"
+        android:layout_height="16dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:src="@drawable/title_login" />
+
+</RelativeLayout>

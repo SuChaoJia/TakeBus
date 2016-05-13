@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:id="@+id/title_layout"
+    android:layout_height="45dp"
+    android:background="#faf9f7"
+    android:elevation="3dp"
+    android:layout_marginTop="0dip"
+     >
+
+    <ImageView
+        android:id="@+id/ivUserMsg"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dp"
+        android:src="@drawable/icon_nomsg" />
+
+    <ImageView
+        android:id="@+id/ivSwap"
+        android:layout_width="80dp"
+        android:layout_height="16dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="10dp"
+        android:src="@drawable/btn_swap_subway" />
+
+    <ImageView
+        android:layout_width="64dp"
+        android:layout_height="16dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:src="@drawable/title_bus" />
+
+</RelativeLayout>

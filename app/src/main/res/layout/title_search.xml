@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="48dp"
+    android:orientation="horizontal" 
+    android:background="#faf9f7"
+    android:gravity="center"
+    android:elevation="3dp">
+    
+ <LinearLayout 
+      android:layout_width="40dip"
+      android:layout_height="match_parent"
+      android:layout_weight="0.8"
+      android:gravity="center"
+     >
+    <ImageView 
+         android:layout_width="30dip"
+         android:layout_height="30dip"
+         android:background="@drawable/search32px"
+        />
+    </LinearLayout> 
+   
+   <View 
+       android:layout_width="0.1dip"
+       android:layout_height="22dip"
+       android:background="#e6e6e6"
+       android:layout_marginLeft="6dp"
+        />
+    
+   <EditText 
+       android:id="@+id/etSearch"
+       android:layout_height="match_parent"
+       android:layout_width="0dp"
+       android:layout_weight="6.8"
+       android:hint="起点站"   
+       android:background="@drawable/edittext"
+       android:textColorHint="#cccccc" 
+       android:textSize="16sp"
+       android:lines="1" 
+        />
+   
+   <Button 
+       android:id="@+id/btn_ok"
+       android:layout_weight="1.2"    
+       android:layout_width="0dp"
+       android:layout_height="match_parent"
+       android:background="#faf9f7"
+       android:text="取消"
+       android:textColor="#febe35"
+       android:textSize="16sp"
+       android:layout_marginRight="9dip"
+       />
+ 
+</LinearLayout>

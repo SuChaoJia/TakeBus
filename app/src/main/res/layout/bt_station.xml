@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<HorizontalScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/btStation"
+    android:layout_width="fill_parent"
+    android:layout_height="100dp"
+    android:layout_alignParentBottom="true"
+      android:layout_alignParentRight="true"
+    android:background="#FFFFFF"
+    android:clickable="true"
+    android:elevation="3dp"
+    android:scrollbars="none"
+    android:visibility="gone" >
+
+    <RelativeLayout
+        android:id="@+id/rl_station"
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:layout_gravity="bottom"
+        android:background="#FFFFFF"
+        android:clickable="true" >
+
+        <FrameLayout
+            android:id="@+id/frameLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true" >
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/circle_line_3_2px" />
+
+            <LinearLayout
+                android:id="@+id/linearLayout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+            </LinearLayout>
+        </FrameLayout>
+    </RelativeLayout>
+
+</HorizontalScrollView>
